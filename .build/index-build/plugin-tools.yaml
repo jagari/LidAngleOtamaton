@@ -1,0 +1,47 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "LidAngleOtamaton-arm64-apple-macosx-debug.module": ["<LidAngleOtamaton-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<LidAngleOtamaton-arm64-apple-macosx-debug.module>"]
+  "test": ["<LidAngleOtamaton-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/LidAngleOtamaton.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/AudioEngine.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/ContentView.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/LidAngleMonitor.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/LidAngleOtamatonApp.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/MusicTheory.swift"]
+    outputs: ["/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/LidAngleOtamaton.build/sources"]
+    description: "Write auxiliary file /Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/LidAngleOtamaton.build/sources"
+
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<LidAngleOtamaton-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/Modules/LidAngleOtamaton.swiftmodule"]
+    outputs: ["<LidAngleOtamaton-arm64-apple-macosx-debug.module>"]
+
+  "C.LidAngleOtamaton-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/AudioEngine.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/ContentView.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/LidAngleMonitor.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/LidAngleOtamatonApp.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/MusicTheory.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/LidAngleOtamaton.build/sources"]
+    outputs: ["/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/Modules/LidAngleOtamaton.swiftmodule"]
+    description: "Compiling Swift Module 'LidAngleOtamaton' (5 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","LidAngleOtamaton","-emit-dependencies","-emit-module","-emit-module-path","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/Modules/LidAngleOtamaton.swiftmodule","-output-file-map","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/LidAngleOtamaton.build/output-file-map.json","-incremental","@/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/LidAngleOtamaton.build/sources","-I","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx12.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","LidAngleOtamaton_main","-swift-version","5","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Package.swift","/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
