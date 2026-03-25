@@ -216,6 +216,8 @@ struct LidAngleView: View {
 
 // MARK: - Preview
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

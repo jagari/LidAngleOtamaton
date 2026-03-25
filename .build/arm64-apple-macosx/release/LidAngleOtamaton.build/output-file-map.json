@@ -1,0 +1,37 @@
+{
+  "": {
+    "dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleOtamaton.d",
+    "object": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleOtamaton.o",
+    "swift-dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/primary.swiftdeps"
+  },
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/AudioEngine.swift": {
+    "object": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/AudioEngine.swift.o",
+    "swiftmodule": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/AudioEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/AudioEngine.swiftdeps",
+    "diagnostics": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/AudioEngine.dia"
+  },
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/ContentView.swift": {
+    "object": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/ContentView.swift.o",
+    "swiftmodule": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/ContentView.dia"
+  },
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/LidAngleMonitor.swift": {
+    "object": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleMonitor.swift.o",
+    "swiftmodule": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleMonitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleMonitor.swiftdeps",
+    "diagnostics": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleMonitor.dia"
+  },
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/LidAngleOtamatonApp.swift": {
+    "object": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleOtamatonApp.swift.o",
+    "swiftmodule": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleOtamatonApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleOtamatonApp.swiftdeps",
+    "diagnostics": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/LidAngleOtamatonApp.dia"
+  },
+  "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/Sources/LidAngleOtamaton/MusicTheory.swift": {
+    "object": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/MusicTheory.swift.o",
+    "swiftmodule": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/MusicTheory~partial.swiftmodule",
+    "swift-dependencies": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/MusicTheory.swiftdeps",
+    "diagnostics": "/Users/injinsung/Desktop/1. 학교, 금융/3. 프로젝트 레포지토리/LidAngleOtamaton/.build/arm64-apple-macosx/release/LidAngleOtamaton.build/MusicTheory.dia"
+  }
+}

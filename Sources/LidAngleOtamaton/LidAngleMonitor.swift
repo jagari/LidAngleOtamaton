@@ -1,5 +1,7 @@
 import Foundation
+#if canImport(CoreMotion) && !os(macOS)
 import CoreMotion
+#endif
 
 /// Monitors the MacBook lid angle using CoreMotion.
 ///
@@ -17,7 +19,9 @@ final class LidAngleMonitor: ObservableObject {
     /// Whether CoreMotion data is available on this Mac.
     @Published var isMotionAvailable: Bool = false
 
+#if canImport(CoreMotion) && !os(macOS)
     private let motionManager = CMMotionManager()
+#endif
     private let updateInterval: TimeInterval = 1.0 / 30.0
 
     init() { startMonitoring() }
@@ -25,6 +29,7 @@ final class LidAngleMonitor: ObservableObject {
     // MARK: - Monitoring
 
     func startMonitoring() {
+#if canImport(CoreMotion) && !os(macOS)
         if motionManager.isDeviceMotionAvailable {
             startDeviceMotion()
         } else if motionManager.isAccelerometerAvailable {
@@ -32,8 +37,13 @@ final class LidAngleMonitor: ObservableObject {
         }
         // If neither is available, isMotionAvailable stays false and the UI
         // will prompt the user to use the manual slider.
+#else
+        // CoreMotion lid sensing is not available on macOS in this package build.
+        isMotionAvailable = false
+#endif
     }
 
+#if canImport(CoreMotion) && !os(macOS)
     private func startDeviceMotion() {
         isMotionAvailable = true
         motionManager.deviceMotionUpdateInterval = updateInterval
@@ -62,10 +72,13 @@ final class LidAngleMonitor: ObservableObject {
             self.lidAngle = ((pitch + .pi / 2) / .pi).clamped(to: 0...1)
         }
     }
+#endif
 
     func stopMonitoring() {
+#if canImport(CoreMotion) && !os(macOS)
         motionManager.stopDeviceMotionUpdates()
         motionManager.stopAccelerometerUpdates()
+#endif
     }
 
     deinit { stopMonitoring() }
